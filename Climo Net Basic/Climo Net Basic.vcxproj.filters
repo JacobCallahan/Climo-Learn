@@ -34,6 +34,9 @@
     <ClInclude Include="NeuralNet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Observation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -49,6 +52,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="NeuralNet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Observation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
