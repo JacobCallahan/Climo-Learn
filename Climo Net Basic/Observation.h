@@ -5,13 +5,9 @@ class Observation {
 	//declare all of our variables needed to store the main elements of the observation
 	int month, day, time, wind_Dir, wind_Speed, wind_Gust, vis, wx, msc_Cover, msc_Height, temp, dewp, altimeter;
 	std::string OBSERVATION_STRING;
-	/*
-		time: \b\d{6}Z\b
-		Vis: \b(\w[0-9\s\/]*SM|\s\d{4}\s)\b
-		temp/DPs: \bM?\d{2,3}\/M?\d{2,3}\b
-		alstg: \bA\d{4}\b
-		SLP: SLP\d{3}
-	*/
+	//will use this for regex matching
+	typedef match_results<const char*> elMatch;
+	std::tr1::match_results<std::string::const_iterator> elResult;
 
 public:
 	Observation(void);
